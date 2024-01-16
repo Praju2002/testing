@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 60%;
+        padding: 50px;
+        font-size: 34px;
+      }
+      input {
+        /* display: block; */
+        outline: none;
+        min-height: 34px;
+        font-size: 24px;
+        margin: 20px 0px;
+        border: 1px solid #333;
+        padding: 6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Full Name</label>
+      <input type="text" name="f_name" id="f_name" value="haribahadur" required/>
+      <span id="f_info"></span>
+
+      <label>Email:</label>
+      <input type="email" name="email" id="email" value="abc@gmail.com" placeholder="example@gmail.com" required/>
+      <span id="e_info"></span>
+
+      <label for="pass">Password</label>
+      <input type="password" id="pass" name="password" />
+      <span id="p_info"></span>
+
+      <input type="button" onclick="formData()" value="Submit" id="b_id" />
+    </form>
+    <script src="./form.js"></script>
+  </body>
+</html>
